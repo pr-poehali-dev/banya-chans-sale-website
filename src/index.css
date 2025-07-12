@@ -90,6 +90,8 @@
   }
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap");
+
 @layer base {
   * {
     @apply border-border;
@@ -97,5 +99,21 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@layer utilities {
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
   }
 }
